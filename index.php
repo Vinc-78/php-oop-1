@@ -11,13 +11,21 @@ var_dump($Il_colore_della_libertà);
 
 var_dump($Il_colore_della_libertà->getTitolo()); */
 
+$Nuovo_Film = new Movies('titolo','genere','regista');
 
+$Nuovo_Film->setTitolo("Mio Titolo");
+$Nuovo_Film->setGenere("Mio Genere");
+$Nuovo_Film->setRegista("Mio Regista");
+
+/* Inseritot un nuovo film con i metodi set  */
 
 
 
 $AllDataFilms = [$Il_colore_della_libertà, $Famiglia_Mostruosa, $Resident_Evil];
 
-/* var_dump($AllDataFilms); */
+$AllDataFilms [] = $Nuovo_Film; /* Aggiunto  */
+
+var_dump($AllDataFilms); 
 
 ?>
 

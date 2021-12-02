@@ -19,7 +19,7 @@ class Movies
     public function setTitolo(string $titolo)
     {
 
-        $this->title = $titolo;
+        $this->titolo = $titolo;
     }
 
     public function getTitolo()
